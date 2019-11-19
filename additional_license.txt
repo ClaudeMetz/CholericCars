@@ -1,0 +1,67 @@
+Sound pack downloaded from Freesound
+----------------------------------------
+
+This pack of sounds contains sounds by the following user:
+ - dream4dreamtheater ( https://freesound.org/people/dream4dreamtheater/ )
+
+You can find this pack online at: https://freesound.org/people/dream4dreamtheater/packs/9984/
+
+License details
+---------------
+
+Attribution: http://creativecommons.org/licenses/by/3.0/
+
+
+Sounds in this pack
+-------------------
+
+  * 161371__dream4dreamtheater__p-ss.mp3
+    * url: https://freesound.org/s/161371/
+    * license: Attribution
+  * 161370__dream4dreamtheater__sh-t.mp3
+    * url: https://freesound.org/s/161370/
+    * license: Attribution
+  * 161369__dream4dreamtheater__sh-t.mp3
+    * url: https://freesound.org/s/161369/
+    * license: Attribution
+  * 161368__dream4dreamtheater__ooohhh-f-k.mp3
+    * url: https://freesound.org/s/161368/
+    * license: Attribution
+  * 161367__dream4dreamtheater__ha-oww.mp3
+    * url: https://freesound.org/s/161367/
+    * license: Attribution
+  * 161366__dream4dreamtheater__ohhh-f-k.mp3
+    * url: https://freesound.org/s/161366/
+    * license: Attribution
+  * 161365__dream4dreamtheater__holy-sh-t.mp3
+    * url: https://freesound.org/s/161365/
+    * license: Attribution
+  * 161364__dream4dreamtheater__hoooly-sh-t.mp3
+    * url: https://freesound.org/s/161364/
+    * license: Attribution
+  * 161362__dream4dreamtheater__f-k.mp3
+    * url: https://freesound.org/s/161362/
+    * license: Attribution
+  * 161361__dream4dreamtheater__girly-scream-longer.mp3
+    * url: https://freesound.org/s/161361/
+    * license: Attribution
+  * 161360__dream4dreamtheater__girly-scream.mp3
+    * url: https://freesound.org/s/161360/
+    * license: Attribution
+  * 161359__dream4dreamtheater__hahaha-f-k.mp3
+    * url: https://freesound.org/s/161359/
+    * license: Attribution
+  * 161358__dream4dreamtheater__a.mp3
+    * url: https://freesound.org/s/161358/
+    * license: Attribution
+  * 161357__dream4dreamtheater__aahh.mp3
+    * url: https://freesound.org/s/161357/
+    * license: Attribution
+  * 161356__dream4dreamtheater__blah.mp3
+    * url: https://freesound.org/s/161356/
+    * license: Attribution
+  * 161355__dream4dreamtheater__f-k-you.mp3
+    * url: https://freesound.org/s/161355/
+    * license: Attribution
+
+

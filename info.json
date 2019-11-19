@@ -1,0 +1,12 @@
+{
+    "name": "cholericcars",
+    "version": "0.17.0",
+    "title": "Choleric Cars",
+    "author": "Therenas",
+    "homepage": "https://github.com/ClaudeMetz/CholericCars",
+    "description": "Your ride doesn't appreciate your driving style.",
+    "factorio_version": "0.17",
+    "dependencies": [
+        "base >= 0.17.74"
+    ]
+}
