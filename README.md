@@ -1,6 +1,6 @@
 # Choleric Cars
 
-This is a simple mod for the game Factorio (v0.17) that turns your rides into choleric cars, because it's fun. Compatible with multiplayer and other mods.
+This is a simple mod for the game Factorio that turns your rides into choleric cars, because it's fun. Compatible with multiplayer and other mods.
 
 Inspired by [a youtube video](https://www.youtube.com/watch?v=mvz3LRK263E) by Michael Reeves. The idea to make this a Factorio mod is by Divran.
 
