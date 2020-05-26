@@ -1,5 +1,6 @@
 require("util")  -- core.lualib
 
+
 local function player_init()
     return {
         last_tick = 0,
@@ -24,23 +25,25 @@ script.on_event(defines.events.on_player_removed, function(event)
 end)
 
 
-script.on_event(defines.events.on_entity_damaged, function(event)
+function entity_damaged(event)
     local entity = event.entity
+    local position = entity.position
+    local driver = entity.get_driver()
     
-    if entity.type == "car" and event.damage_type.name == "impact" then
-        local position = entity.position
-        local driver = entity.get_driver()
+    if driver == nil then  -- Rate limiting is not needed on driverless cars anyways
+        entity.surface.play_sound{path="cc_expletives", position=position}
+    else
+        local player = global.players[driver.player.index]
+        local tick = game.tick
 
-        if driver == nil then  -- Rate limiting is not needed on driverless cars anyways
+        if (tick - player.last_tick) > 60 and util.distance(player.last_position, position) > 0.01 then
             entity.surface.play_sound{path="cc_expletives", position=position}
-        else
-            local tick = game.tick
-            local player = global.players[entity.get_driver().player.index]
-            if (tick - player.last_tick) > 60 and util.distance(player.last_position, position) > 0.01 then
-                entity.surface.play_sound{path="cc_expletives", position=position}
-                player.last_tick = tick
-            end
-            player.last_position = position
+            player.last_tick = tick
         end
+
+        player.last_position = position
     end
-end)
+end
+
+local on_entity_damaged_filter = {{filter="type", type="car"}, {filter="damage-type", type="impact", mode="and"}}
+script.on_event(defines.events.on_entity_damaged, entity_damaged, on_entity_damaged_filter)
