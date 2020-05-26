@@ -28,14 +28,19 @@ script.on_event(defines.events.on_entity_damaged, function(event)
     local entity = event.entity
     
     if entity.type == "car" and event.damage_type.name == "impact" then
-        local player = global.players[entity.get_driver().player.index]
         local position = entity.position
-        
-        local tick = game.tick
-        if (tick - player.last_tick) > 60 and util.distance(player.last_position, position) > 0.01 then
+        local driver = entity.get_driver()
+
+        if driver == nil then  -- Rate limiting is not needed on driverless cars anyways
             entity.surface.play_sound{path="cc_expletives", position=position}
-            player.last_tick = tick
+        else
+            local tick = game.tick
+            local player = global.players[entity.get_driver().player.index]
+            if (tick - player.last_tick) > 60 and util.distance(player.last_position, position) > 0.01 then
+                entity.surface.play_sound{path="cc_expletives", position=position}
+                player.last_tick = tick
+            end
+            player.last_position = position
         end
-        player.last_position = position
     end
 end)
